@@ -1,0 +1,9 @@
+services:
+  helloworld:
+    container_name: helloworld
+    image: helloworld
+    restart: always
+    ports:
+      - "8081:8080"
+    networks:
+      - karavan

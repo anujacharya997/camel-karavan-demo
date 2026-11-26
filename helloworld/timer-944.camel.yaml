@@ -1,0 +1,17 @@
+- route:
+    id: route-1860
+    nodePrefixId: route-578
+    from:
+      id: from-5fa8
+      uri: timer
+      parameters:
+        timerName: Hello World
+        delay: "10000"
+      steps:
+        - process:
+            id: processdcb7
+            ref: customProcessor
+        - log:
+            id: log-4af4
+            message: message - ${body}
+            loggingLevel: INFO

@@ -1,0 +1,10 @@
+- routeConfiguration:
+    errorHandler:
+      id: errorHandler6354
+      deadLetterChannel:
+        id: deadLetterChanneld4a5
+        deadLetterUri: direct:defaultDLQ
+        redeliveryPolicy:
+          id: redeliveryPolicyd469
+          maximumRedeliveries: 0
+          redeliveryDelay: "500"
